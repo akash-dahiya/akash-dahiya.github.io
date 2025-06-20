@@ -90,7 +90,13 @@
       font-size: 0.9rem;
       color: #999;
     }
-  </style>
+  
+    .zoomable {
+      transition: transform 0.3s ease;
+    }
+    .zoomable:hover {
+      transform: scale(1.05);
+    }$1
 </head>
 <body>
   <header>
@@ -108,44 +114,46 @@
     <p>I'm a digital problem solver working across product, data, and design. I combine business analysis, UX research, and strategic thinking to design and deliver user-focused digital products. My interests lie in evidence-based decision making, inclusive design, and tech for good.</p>
   </section>
 
+  <section id="projects">
+    <h2>Selected Projects</h2>
 
-  
+    <div class="project">
+      <h3>Performance Navigator – KPI Optimisation</h3>
+      <p>Redesigned American Express's internal performance dashboard to improve KPI tracking for call center colleagues. Introduced a decile-based scoring model, logic enhancements, and performance evaluation tools to streamline agent coaching and oversight.</p>
+      <a href="#" target="_blank">View Case Study</a>
+    </div>
+
+    <div class="project">
+      <h3>GenAI-Enabled Reporting Suite</h3>
+      <p>Developed interactive, AI-powered reporting products using Microsoft and Tableau ecosystems. Focused on self-service data enablement, NLP-powered exploration, and executive dashboards tailored for business users and decision makers.</p>
+      <a href="#" target="_blank">View Case Study</a>
+    </div>
+
+    <div class="project">
+      <h3>Go-to-Market Strategy – Bicycle Retail Client</h3>
+      <p>Created a city-level go-to-market plan for a bicycle company post-pandemic. Devised product-market fit research, pricing strategy, and location-specific messaging which led to an 8% year-over-year revenue increase. Co-ordinated marketing, operations, and retail functions.</p>
+      <a href="#" target="_blank">View Strategy</a>
+    </div>
+
+    <div class="project">
+      <h3>Single-Stop Data Solution – Mind UK</h3>
+      <p>Led the development of a centralised data solution that transformed donor engagement, financial tracking, and GDPR compliance. The product streamlined management of fundraising and volunteering, saving time and improving targeting. Built a reusable framework now adopted across departments to drive sustainable growth and enhance donor relations.</p>
+      <a href="#" target="_blank">Read Full Story</a>
+    </div>
+
+    <div class="project">
+      <h3>Cambridgeshire Collision Navigator</h3>
+      <p>Designed a dashboard and early-warning system to track road collisions across Cambridgeshire. Used machine learning models in R and visualised high-risk zones using Tableau. The dashboard supported local council action planning and increased public awareness of traffic risks.</p>
+      $1 class="zoomable">
+      <a href="https://public.tableau.com/app/profile/akash.dahiya/viz/CollissionsNavigator-CambridgeshireCityCouncil/Dashboard" target="_blank">View Tableau Dashboard</a>
+    </div>
+  </section>
+
   <section class="interactive">
     <h2>Let Me Know You're Here!</h2>
     <p>Let me know by dribbling this ball whenever you visit my portfolio.</p>
     <div class="ball" onclick="dribble()"></div>
   </section>
-
-  
-  <section id="projects">
-    <h2>Selected Projects</h2>
-
-    <div class="project">
-      <h3>Performance Navigator Redesign</h3>
-      <p>Redesigned an internal CRM performance dashboard by integrating predictive scoring using random forests and decile-based evaluation models. Enabled better call centre oversight and improved coaching outcomes.</p>
-      <a href="https://github.com/akash-dahiya/performance-navigator" target="_blank">View Project</a>
-    </div>
-
-    <div class="project">
-      <h3>Quantitative UX Research at Kovenant</h3>
-      <p>Led a quantitative study for a matchmaking platform to identify top-valued user features using simulation modeling, MDE thresholds, and logistic regression targeting. Insights directly influenced the product roadmap.</p>
-      <a href="https://github.com/akash-dahiya/kovenant-research" target="_blank">View Project</a>
-    </div>
-
-    <div class="project">
-      <h3>Donor Behaviour Analysis for Mind</h3>
-      <p>Used Python to build a predictive model forecasting donation patterns. Delivered segmentation insights and improved campaign targeting with NLP and clustering methods.</p>
-      <a href="https://github.com/akash-dahiya/donor-segmentation" target="_blank">View Project</a>
-    </div>
-
-    <div class="project">
-      <h3>Cambridgeshire Collision Navigator</h3>
-      <p>Created a comprehensive dashboard for Cambridgeshire City Council using Tableau to analyse over 9,000 road collisions. Applied machine learning in R to build an alert system that predicts high-risk periods. The project aimed to improve road safety using data-led decisions, and included an action plan and risk alerts for emergency services and the public.</p>
-      <img src="cambridge-dashboard.jpeg" alt="Cambridgeshire Collision Dashboard" style="width:100%; margin-top:10px; border:1px solid #ccc; border-radius:8px;">
-      <a href="https://public.tableau.com/app/profile/akash.dahiya/viz/CollissionsNavigator-CambridgeshireCityCouncil/Dashboard" target="_blank">View Tableau Dashboard</a>
-    </div>
-  </section>
-
 
   <section id="contact">
     <h2>Contact</h2>
